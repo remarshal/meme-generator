@@ -1,3 +1,8 @@
+body {
+  font-family: "Karla", sans-serif;
+}
+
+/* HEADER */
 .header {
   text-align: center;
 }
@@ -35,4 +40,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* MEME */
+main {
+  padding: 36px;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  font-size: x-large;
+  border-radius: 5px;
+  color: white;
+  background-image: linear-gradient(90deg, #4158D0 0%, #C850C0 30%, #FFCC70 66%);
+  border: none;
+  cursor: pointer;
 }
