@@ -7,7 +7,7 @@ function Header() {
             <header className="header">
                 <img src={logo} className="header-logo" alt="logo" />
                 <h2 className='header-title'>meme generator</h2>
-                <p>React Project</p>
+                <button className='header-button'>Theme Change</button>
             </header>
         </div>
     );

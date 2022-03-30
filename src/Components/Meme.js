@@ -1,13 +1,16 @@
 import "../style.css";
 
 function Meme() {
+    function handleClick() {
+        console.log("clicked")
+    }
     return (
         <main>
-            <form className="form">
+            <div className="form">
                 <input type="text" className="form--input" placeholder="top text"></input>
                 <input type="text" className="form--input" placeholder="bottom text"></input>
-                <button className="form--button">get new meme image</button>
-            </form>
+                <button onClick={handleClick} className="form--button">get new meme image</button>
+            </div>
         </main>
     );
 }

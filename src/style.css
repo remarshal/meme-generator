@@ -33,6 +33,14 @@ body {
   margin-right: auto;
 }
 
+.header-button {
+  font-family: "Karla", sans-serif;
+  font-size: x-large;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
 @keyframes header-logo-spin {
   from {
     transform: rotate(0deg);
@@ -59,6 +67,7 @@ main {
   border: 1px solid #D5D4D8;
   text-indent: 5px;
 }
+
 .form--button {
   grid-column: 1 / -1;
   font-family: "Karla", sans-serif;
