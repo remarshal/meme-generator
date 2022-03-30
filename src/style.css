@@ -39,6 +39,8 @@ body {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  width: 170px;
+  margin-right: 20px;
 }
 
 @keyframes header-logo-spin {
