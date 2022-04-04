@@ -1,7 +1,8 @@
 import "../style.css";
+import memeData from "../data"
 
 function Meme() {
-    function handleClick() {
+    function newMeme() {
         console.log("clicked")
     }
     return (
@@ -9,7 +10,7 @@ function Meme() {
             <div className="form">
                 <input type="text" className="form--input" placeholder="top text"></input>
                 <input type="text" className="form--input" placeholder="bottom text"></input>
-                <button onClick={handleClick} className="form--button">get new meme image</button>
+                <button onClick={newMeme} className="form--button">get new meme image</button>
             </div>
         </main>
     );
