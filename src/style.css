@@ -57,10 +57,11 @@ main {
   padding: 36px;
 }
 
-main--img {
-  margin: 20px;
-  display: flex;
-  align-items: center;
+.main--img {
+  display:block;
+  margin: auto;
+  padding: 20px;
+  max-width: 50%;
 }
 
 .form {
