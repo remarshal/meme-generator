@@ -57,6 +57,12 @@ main {
   padding: 36px;
 }
 
+main--img {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
 .form {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
@@ -80,3 +86,4 @@ main {
   border: none;
   cursor: pointer;
 }
+
