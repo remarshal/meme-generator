@@ -29,8 +29,10 @@ function Meme() {
                 <input type="text" className="form--input" placeholder="bottom text"></input>
                 <button onClick={newMeme} className="form--button">Get new meme image</button>
             </div>
-            <div>
+            <div className="meme">
                 <img src={meme.randomImage} className="main--img" />
+                <h2 className="meme--text top">One does not simply</h2>
+                <h2 className="meme--text bottom">Walk into Mordor</h2>
             </div>
         </main>
     );
