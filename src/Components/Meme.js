@@ -6,7 +6,7 @@ function Meme() {
     const [meme, setMeme] = useState({
         topText: "",
         bottomText: "",
-        randomImage: "http://i.imgflip.com/1bij.jpg"
+        randomImage: ""
     });
 
     const [allMemeImages, setAllMemeImages] = useState(memesData);
@@ -27,7 +27,7 @@ function Meme() {
             <div className="form">
                 <input type="text" className="form--input" placeholder="top text"></input>
                 <input type="text" className="form--input" placeholder="bottom text"></input>
-                <button onClick={newMeme} className="form--button">get new meme image</button>
+                <button onClick={newMeme} className="form--button">Get new meme image</button>
             </div>
             <div>
                 <img src={meme.randomImage} className="main--img" />
