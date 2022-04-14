@@ -11,12 +11,12 @@ function Header() {
 
    let newTheme;
    if (theme) {
-      newTheme = "Light";
-      let bodyColor = (document.querySelector("body").style.backgroundColor =
-         "black");
-   } else {
       newTheme = "Dark";
-      document.querySelector("body").style.backgroundColor = "white";
+      let bodyColor = (document.querySelector("body").style.backgroundColor =
+         "white");
+   } else {
+      newTheme = "Light";
+      document.querySelector("body").style.backgroundColor = "black";
    }
 
    return (
