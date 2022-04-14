@@ -51,7 +51,7 @@ function Meme() {
                value={meme.bottomText}
             ></input>
             <button onClick={newMeme} className="form--button">
-               Get new meme image
+               get new meme image
             </button>
          </div>
          <div className="meme">
