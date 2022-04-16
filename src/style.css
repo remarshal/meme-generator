@@ -62,7 +62,7 @@ input {
 .form {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
-  gap: 17px;
+  gap: 20px;
 }
 
 .form--input {
@@ -73,7 +73,7 @@ input {
 }
 
 .form--button {
-  grid-column: 1 / -1;
+  grid-column: 1 / 0;
   font-family: "Karla", sans-serif;
   font-size: x-large;
   border-radius: 5px;
@@ -93,7 +93,7 @@ main {
   display:block;
   margin: auto;
   padding: 20px;
-  max-width: 50%;
+  max-width: 80%;
 }
 
 .meme {
