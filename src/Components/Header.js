@@ -12,7 +12,7 @@ function Header() {
    let newTheme;
    if (theme) {
       newTheme = "Dark";
-      document.querySelector("body").style.backgroundColor = "white";
+      (document.querySelector("body").style.backgroundColor ="white");
    } else {
       newTheme = "Light";
       document.querySelector("body").style.backgroundColor = "black";

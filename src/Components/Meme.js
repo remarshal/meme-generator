@@ -8,21 +8,21 @@ function Meme() {
       randomImage: "",
    });
 
-   const [allMemes, setAllMemes] = useState([ ]);
+   const [allMemes, setAllMemes] = useState([]);
 
    useEffect(() => {
       fetch("https://api.imgflip.com/get_memes")
-         .then(res => res.json())
-         .then(memesData => setAllMemes(memesData.data.memes))
-   }, [ ])
+         .then((res) => res.json())
+         .then((memesData) => setAllMemes(memesData.data.memes));
+   }, []);
 
    function handleChange(event) {
-      setMeme(prevData => {
+      setMeme((prevData) => {
          return {
             ...prevData,
-            [event.target.name] : event.target.value
-         }
-      })
+            [event.target.name]: event.target.value,
+         };
+      });
    }
 
    function newMeme() {
@@ -32,7 +32,14 @@ function Meme() {
          ...prevState,
          randomImage: url,
       }));
-      console.log(meme.randomImage);
+   }
+
+   function resetText() {
+      setMeme((prevState) => ({
+         ...prevState,
+         topText: "",
+         bottomText: "",
+      }));
    }
 
    return (
@@ -54,9 +61,12 @@ function Meme() {
                onChange={handleChange}
                value={meme.bottomText}
             ></input>
-            <button onClick={newMeme} className="form--button">
-               get new meme image
-            </button>
+               <button onClick={newMeme} className="form--button">
+                  get new meme image
+               </button>
+               <button onClick={resetText} className="form--button">
+                  reset text boxes
+               </button>
          </div>
          <div className="meme">
             <img src={meme.randomImage} className="main--img" />
