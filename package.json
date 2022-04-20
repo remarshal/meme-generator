@@ -1,5 +1,6 @@
 {
   "name": "meme-generator",
+  "homepage": "https://remarshal-meme-generator.netlify.app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

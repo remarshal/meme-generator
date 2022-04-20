@@ -65,6 +65,16 @@ input {
   gap: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .form {
+      grid-template-columns: 1fr;
+  }
+
+  .form--input {
+    text-align: center;
+  }
+}
+
 .form--input {
   font-family: "Karla", sans-serif;
   border-radius: 5px;
